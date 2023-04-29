@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/db490724bf.js" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="utility.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <title>TV Show</title>
+
+</head>
+
+<body>
+<div class="header">
+  <h3>ShowFinder</h3> 
+   <div class="icon">     
+    <i class="fa-solid fa-film fa-2x"></i>
+  </div>
+</div>
+
+ <div id="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider round"></span>
+      </label>
+      <span id="toggle-label">Dark Theme</span>
+ </div>
+
+  <h1>TV Search</h1>
+  <input type="text" id="searchField" placeholder="Search a TV Show...">
+  <ul id="resultsList"></ul>
+  <ul id="imagesDisplay"></ul>
+  <div id="errorMessage">
+  </div>
+
+
+  <h1>Search By Genre</h1>
+  <input type="text" id="searchQuery" placeholder="Search a show by genre...">
+  <button onclick="searchGenre()">Search</button>
+  <div id="results"></div>
+
+
+<!-- Media Player -->
+<h1>New Show Trailers (2023)</h1>
+  <select name="video" id="video-select">
+    <option value="elemental">Elemental</option>
+    <option value="joyRide">Joy Ride</option>
+    <option value="doctorWho">Doctor Who</option>
+    <option value="extraction">Extraction</option>
+    <option value="secretInvasion">Secret Invasion</option>
+    <option value="succession">Succession</option>
+    <option value="theFlash">The Flash</option>
+    <option value="theLittleMermaid">The Little Mermaid</option>
+  </select>
+  <button onclick="selectVideo()">Select</button>
+  </p>
+        <div class="player">
+          <video controls loop>
+            <source src="videos/elemental.mp4" type="video/mp4">
+            <!-- fallback content here -->
+          </video>
+          <div class="controls">
+  <div>
+  <p>
+
+  </div>
+    <!-- Number: <input type="number" id="valueText"> -->
+  </p>
+
+      </section>
+
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</body>
+
+</html>
